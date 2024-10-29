@@ -1,0 +1,57 @@
+html, body, *{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+:root{
+  --light-blue: #2998ff;
+  --dark-blue: #135cc5;
+
+  --light-red: #f87171;
+  --dark-red: #dc2622;
+
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+
+  --font-color: #001010;
+
+  --h1: 7.594 rem;
+  --h2: 5.063 rem;
+  --h3: 3.375 rem;
+  --h4: 2.25 rem;
+  --h5: 1.5 rem;
+}
+
+h1{
+  font-size: var(--h1);
+}
+
+h2{
+  font-size: var(--h2);
+}
+
+h3{
+  font-size: var(--h3);
+}
+
+h4{
+  font-size: var(--h4);
+}
+
+h5{
+  font-size: var(--h5);
+}
+
+body{
+  background-color: var(--primary);
+}
+
+.warm{
+  --primary: var(--light-red);
+}
+
+.cool{
+  --primary: var(--light-blue);
+}
