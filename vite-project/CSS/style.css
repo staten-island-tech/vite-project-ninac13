@@ -6,22 +6,23 @@ html, body, *{
 }
 
 :root{
-  --light-blue: #2998ff;
-  --dark-blue: #135cc5;
+  --dark-blue: #063547;
+  --dark-green: #033537;
 
-  --light-red: #f87171;
-  --dark-red: #dc2622;
+/*Text colors*/
+  --off-white-text: #fcf9ee;
+  --light-red-text: #c4223b;
 
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
+/*Intentions*/
+  --primary: var(--dark-blue);
+  --secondary: var(--dark-green);
 
-  --font-color: #001010;
-
-  --h1: 7.594 rem;
-  --h2: 5.063 rem;
-  --h3: 3.375 rem;
-  --h4: 2.25 rem;
-  --h5: 1.5 rem;
+/*Typography*/
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
 }
 
 h1{
@@ -44,14 +45,24 @@ h5{
   font-size: var(--h5);
 }
 
-body{
+h1,
+h2,
+h3,
+h4,
+h5{
+  text-align: center;
+}
+
+.sea{
   background-color: var(--primary);
 }
 
-.warm{
-  --primary: var(--light-red);
+.forest{
+  background-color: var(--secondary);
 }
 
-.cool{
-  --primary: var(--light-blue);
+.main{
+  background-color: var(--primary);
+  height: 90vh;
+
 }
