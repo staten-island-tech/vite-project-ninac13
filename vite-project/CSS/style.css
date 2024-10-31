@@ -8,6 +8,8 @@ html, body, *{
 :root{
   --dark-blue: #063547;
   --dark-green: #033537;
+  --beige: #e8e3cc;
+  --white: #fcf9f8;
 
 /*Text colors*/
   --off-white-text: #fcf9ee;
@@ -15,7 +17,7 @@ html, body, *{
 
 /*Intentions*/
   --primary: var(--dark-blue);
-  --secondary: var(--dark-green);
+  --secondary: var(--beige);
 
 /*Typography*/
   --h1: 7.594rem;
@@ -54,15 +56,20 @@ h5{
 }
 
 .sea{
-  background-color: var(--primary);
+  --primary: var(--dark-blue);
+  --secondary: var(--beige);
 }
 
 .forest{
-  background-color: var(--secondary);
+  --primary: var(--dark-green);
+  --secondary: var(--white);
+}
+
+.normal{
+  background-color: var(--primary);
 }
 
 .main{
-  background-color: var(--primary);
+  background-color: var(--secondary);
   height: 90vh;
-
 }
