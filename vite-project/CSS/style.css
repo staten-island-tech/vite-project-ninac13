@@ -55,6 +55,29 @@ h5{
   text-align: center;
 }
 
+.container{
+  align-items: center;
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  height: 30rem;
+  width: 22%;
+  min-width: 300px;
+  border-radius: 80px;
+  border-width: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
 .sea{
   --primary: var(--dark-blue);
   --secondary: var(--beige);
@@ -72,4 +95,13 @@ h5{
 .main{
   background-color: var(--secondary);
   height: 90vh;
+}
+
+/*See why this cannot be aligned*/
+.form {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
