@@ -78,6 +78,11 @@ h5{
   margin-bottom: 50px;
 }
 
+.card-img{
+  width: 100%;
+  height: 80%;
+}
+
 .sea{
   --primary: var(--dark-blue);
   --secondary: var(--beige);
@@ -95,13 +100,4 @@ h5{
 .main{
   background-color: var(--secondary);
   height: 90vh;
-}
-
-/*See why this cannot be aligned*/
-.form {
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px 0;
 }
