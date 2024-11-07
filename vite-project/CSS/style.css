@@ -55,6 +55,19 @@ h5{
   text-align: center;
 }
 
+.buttons{
+  align-items: center;
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btn{
+  font-size: 20px;
+}
+
 .container{
   align-items: center;
   width: 100%;
@@ -76,6 +89,8 @@ h5{
   justify-content: space-around;
   background-size: cover;
   margin-bottom: 50px;
+  /*CHANGE BACKGROUND COLOR LATER SO THAT WHEN A THEME BUTTON IS CLICKED THE BACKGROUND COLOR CHANGES IN JSON*/
+  background-color: var(--dark-blue);
 }
 
 .card-img{
