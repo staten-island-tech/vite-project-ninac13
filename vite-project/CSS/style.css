@@ -70,7 +70,7 @@ h5{
   min-width: 300px;
   border-radius: 80px;
   border-width: 10px;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
