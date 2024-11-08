@@ -23,3 +23,11 @@ card(products);
 
 //function when you click a button, filter so only certain cards show up
 //filter using .sort and .includes
+
+DOMSelectors.sweetButton.addEventListener((products),"click", function (event){
+    document.querySelector(".container").innerHTML = ""; //changes container to blank at first
+    //filter and show cards with sweet as their taste
+    if (products.filter((product)=>product.taste.includes("Sweet"))){
+        //MAKE CARDS SHOW UP!!
+    }
+});
