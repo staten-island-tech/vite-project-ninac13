@@ -6,45 +6,43 @@ html, body, *{
 }
 
 :root{
-  --dark-blue: #063547;
+  --bright-red: #c83057;
   --dark-green: #033537;
-  --beige: #e8e3cc;
-  --white: #fcf9f8;
+
+/*background color*/
+  --lightpink: #e2d5d3;
+  --yellow: #f9eec7;
 
 /*Text colors*/
-  --off-white-text: #fcf9ee;
-  --light-red-text: #c4223b;
+  --green-text: #3b6931;
+  --dark-blue-text: #063547;
 
-/*Intentions*/
-  --primary: var(--dark-blue);
-  --secondary: var(--beige);
+/*Card colors*/
+  --dark-pink-card:#c19b95;
+  --sage-card: #688773;
 
 /*Typography*/
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
-  --h5: 1.5rem;
+  --h1: 6.594rem;
+  --h2: 3.063rem;
+  --h3: 2.375rem;
 }
 
 h1{
   font-size: var(--h1);
+  color: var(--headings);
+  font-family: "Merriweather", serif;
 }
 
 h2{
   font-size: var(--h2);
+  color: var(--headings);
+  font-family: "Merriweather", serif;
 }
 
 h3{
   font-size: var(--h3);
-}
-
-h4{
-  font-size: var(--h4);
-}
-
-h5{
-  font-size: var(--h5);
+  color: var(--description);
+  font-family: "PT Sans", sans-serif;
 }
 
 h1,
@@ -62,17 +60,23 @@ h5{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: var(--secondary);
 }
 
 .sweetbtn,
 .saltybtn,
 .themebtn,
 .spicybtn,
+.allbtn,
 .blandbtn{
   font-size: 20px;
   border-radius: 20px;
   cursor: pointer;
+  background-color: var(--cardcolor);
+  border-color: var(--headings);
+  color: var(--description);
+  border-style: solid;
+  padding: 10px 20px;
+  font-family: "PT Sans", sans-serif;
 }
 
 .container{
@@ -85,7 +89,7 @@ h5{
 }
 
 .card{
-  height: 30rem;
+  height: 40rem;
   width: 22%;
   min-width: 300px;
   border-radius: 80px;
@@ -96,30 +100,53 @@ h5{
   justify-content: space-around;
   background-size: cover;
   margin-bottom: 50px;
-  /*CHANGE BACKGROUND COLOR LATER SO THAT WHEN A THEME BUTTON IS CLICKED THE BACKGROUND COLOR CHANGES IN JSON*/
-  background-color: var(--dark-blue);
+  background-color: var(--cardcolor);
+  border-color: var(--headings);
+  border-width: 2px;
+  border-style: solid;
 }
+
+.top{
+  background-color: var(--cardcolor);
+  border-color: var(--headings);
+  border-width: 2px;
+  border-style: solid;
+}
+
 
 .card-img{
-  width: 100%;
-  height: 80%;
+  width: 95%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 50px;
+  border-color: var(--headings);
+  border-width: 2px;
+  border-style: solid;
 }
 
-.sea{
-  --primary: var(--dark-blue);
-  --secondary: var(--beige);
+/*VIBRANT THEME*/
+.vibrant{
+  --primary: var(--bright-red);
+  --secondary: var(--yellow);
+  --cardcolor: var(--sage-card);
+  --headings: var(--bright-red);
+  --description: var(--dark-blue-text);
 }
 
-.forest{
+/*MINTY THEME*/
+.minty{
   --primary: var(--dark-green);
-  --secondary: var(--white);
+  --secondary: var(--lightpink);
+  --cardcolor: var(--dark-pink-card);
+  --headings: var(--dark-green);
+  --description: var(--green-text);
 }
 
-.normal{
-  background-color: var(--primary);
-}
 
 .main{
+  height: 100%;
+}
+
+body{
   background-color: var(--secondary);
-  height: 90vh;
 }

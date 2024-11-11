@@ -24,10 +24,54 @@ card(products);
 //function when you click a button, filter so only certain cards show up
 //filter using .sort and .includes
 
-DOMSelectors.sweetButton.addEventListener((products),"click", function (event){
-    document.querySelector(".container").innerHTML = ""; //changes container to blank at first
-    //filter and show cards with sweet as their taste
-    if (products.filter((product)=>product.taste.includes("Sweet"))){
-        //MAKE CARDS SHOW UP!!
+function showSweetProducts(){
+    DOMSelectors.sweetButton.addEventListener("click", function(){
+        DOMSelectors.container.innerHTML = ""; //initially clears out the container
+        card(products.filter((product)=>product.taste.includes("Sweet"))); //filters the products that have sweet included
+    })
+}
+showSweetProducts();
+
+function showSaltyProducts(){
+    DOMSelectors.saltyButton.addEventListener("click", function(){
+        DOMSelectors.container.innerHTML = ""; //initially clears out the container
+        card(products.filter((product)=>product.taste.includes("Salty"))); //filters the products that have salty included
+    })
+}
+showSaltyProducts();
+
+function showBlandProducts(){
+    DOMSelectors.blandButton.addEventListener("click", function(){
+        DOMSelectors.container.innerHTML = ""; //initially clears out the container
+        card(products.filter((product)=>product.taste.includes("Bland"))); //filters the products that have bland included
+    })
+}
+showBlandProducts();
+
+function showSpicyProducts(){
+    DOMSelectors.spicyButton.addEventListener("click", function(){
+        DOMSelectors.container.innerHTML = ""; //initially clears out the container
+        card(products.filter((product)=>product.taste.includes("Spicy"))); //filters the products that have spicy included
+    })
+}
+showSpicyProducts();
+
+function showAllProducts(){
+    DOMSelectors.allButton.addEventListener("click", function(){
+        DOMSelectors.container.innerHTML = ""; //initially clears out the container
+        card(products);
+    })
+}
+showAllProducts();
+
+//change theme
+document.querySelector(".themebtn").addEventListener("click", function(){
+    if(document.body.classList.contains("minty")){
+        document.body.classList.add("vibrant");
+        document.body.classList.remove("minty");
+    }
+    else{
+        document.body.classList.add("minty");
+        document.body.classList.remove("vibrant");
     }
 });

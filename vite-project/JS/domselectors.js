@@ -4,7 +4,9 @@ const DOMSelectors = {
     sweetButton: document.querySelector(".sweetbtn"),
     saltyButton: document.querySelector(".saltybtn"),
     blandButton: document.querySelector(".blandbtn"),
-    spicyButton: document.querySelector(".spicybtn")
+    spicyButton: document.querySelector(".spicybtn"),
+    allButton: document.querySelector(".allbtn"),
+    card: document.querySelector(".card")
 };
 
 export{DOMSelectors};
