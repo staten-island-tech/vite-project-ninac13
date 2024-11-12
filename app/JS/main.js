@@ -1,7 +1,7 @@
 //create theme button
 //create different filters based off of elements in products.js
 
-import '../css/style.css';
+import '../CSS/style.css';
 import { DOMSelectors } from "./domselectors";
 import { products } from './Products';
 
