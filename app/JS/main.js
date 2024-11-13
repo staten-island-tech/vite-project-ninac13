@@ -3,7 +3,7 @@
 
 import '../CSS/style.css';
 import { DOMSelectors } from "./domselectors";
-import { products } from './Products';
+import { products } from './products';
 
 function card(products) {
     products.forEach((product)=>
